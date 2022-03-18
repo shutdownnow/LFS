@@ -9,7 +9,7 @@ cd /sources
 # step3
 for package in libstdc++ gettext bison perl python texinfo util-linux; do
 	echo -n ""
-	# source packageinstall.sh 3 $package
+	source packageinstall.sh 3 $package
 done
 
 rm -rf /usr/share/{info,man,doc}/*

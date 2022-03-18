@@ -19,9 +19,10 @@ install -dv -m 1777 /tmp /var/tmp
 
 ln -sfv /proc/self/mounts /etc/mtab
 
-cat > /etc/hosts << EOF
-127.0.0.1	localhost	$(hostname)
+cat > /etc/hosts << "EOF"
+127.0.0.1	localhost
 ::1			localhost
+127.0.1.1	AMDLFS.localdomain	AMDLFS
 EOF
 
 cat > /etc/passwd << "EOF"

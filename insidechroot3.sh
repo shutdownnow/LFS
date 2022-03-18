@@ -13,7 +13,7 @@ for package in \
 	kbd libpipeline make patch tar texinfo vim eudev udev-lfs \
 	man-db procps-ng util-linux e2fsprogs sysklogd sysvinit; do
 	echo -n ""
-	# source packageinstall.sh 4 $package
+	source packageinstall.sh 4 $package
 done
 
 rm -rf /tmp/*

@@ -1,6 +1,9 @@
 export LFS=""
 cd /sources
 
+source packageinstall.sh 5 cpio
+source step5/initramfs.sh
+
 cat > /etc/fstab << "EOF"
 # Begin /etc/fstab
 # ⽂件系统 挂载点  类型  选项    转储 检查
@@ -17,7 +20,7 @@ efivarfs /sys/firmware/efi/efivars efivarfs defaults 0 0
 # End /etc/fstab
 EOF
 
-# source packageinstall.sh 5 linux
+source packageinstall.sh 5 linux
 
 install -v -m755 -d /etc/modprobe.d
 cat > /etc/modprobe.d/usb.conf << "EOF"
@@ -28,7 +31,7 @@ install uhci_hcd /sbin/modprobe ehci_hcd ; /sbin/modprobe -i uhci_hcd ; true
 EOF
 
 cat > /boot/efi/grub/grub.cfg << EOF
-# Begin /boot/grub/grub.cfg
+# Begin /boot/efi/grub/grub.cfg
 set default=0
 set timeout=5
 

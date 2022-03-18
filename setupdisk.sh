@@ -27,4 +27,4 @@ w
 EOF
 
 sudo mkfs -t vfat -I "${LFS_DISK}1"
-sudo mkfs -t f2fs -f "${LFS_DISK}2"
+sudo mkfs -t ext4 -F "${LFS_DISK}2"

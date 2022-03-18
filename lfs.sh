@@ -4,6 +4,7 @@ export LFS=/mnt/lfs
 export LFS_TGT=$(uname -m)-lfs-linux-gnu
 export LFS_DISK=/dev/sdc
 export LFS_MIRROR=https://file.colonq.cn/mirrors/lfs/11.1
+export MAKEFLAGS='-j16'
 
 if ! grep -q "$LFS" /proc/mounts; then
 	source setupdisk.sh "$LFS_DISK"
@@ -30,18 +31,16 @@ export PATH="$LFS/tools/bin:$PATH"
 
 source download.sh
 
-export MAKEFLAGS='-j12'
-
 # step1
 for package in binutils gcc linux-api-header glibc libstdc++; do
 	echo -n ""
-	# source packageinstall.sh 1 $package
+	source packageinstall.sh 1 $package
 done
 
 # step2
 for package in m4 ncurses bash coreutils diffutils file findutils gawk grep gzip make patch sed tar xz binutils gcc; do
 	echo -n ""
-	# source packageinstall.sh 2 $package
+	source packageinstall.sh 2 $package
 done
 
 chmod ugo+x preparechroot.sh

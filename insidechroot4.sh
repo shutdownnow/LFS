@@ -1,7 +1,7 @@
 export LFS=""
 cd /sources
 
-# source packageinstall.sh 5 blfs-bootscripts
+source packageinstall.sh 5 blfs-bootscripts
 
 cat > /etc/sysconfig/ifconfig.eth0 << "EOF"
 ONBOOT=yes
