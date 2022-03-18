@@ -8,3 +8,4 @@
 
 * LFS_MIRROR: Default mirror path, can be empty.
 
+* MAKEFLAGS: Compile time maximum thread.
