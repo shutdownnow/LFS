@@ -39,6 +39,7 @@ efivar-37-gcc_9-1;37;https://www.linuxfromscratch.org/patches/blfs/11.0/efivar-@
 popt;1.18;http://ftp.rpm.org/popt/releases/popt-1.x/popt-@.tar.gz;450f2f636e6a3aa527de803d0ae76c5a
 efibootmgr;17;https://github.com/rhboot/efibootmgr/archive/@/efibootmgr-@.tar.gz;6ae315936d9bc8613b3a4cb8a4064128
 grub;2.06;https://ftp.gnu.org/gnu/grub/grub-@.tar.xz;cf0fd928b1e5479c8108ee52cb114363
+cpio;2.13;https://ftp.gnu.org/gnu/cpio/cpio-2.13.tar.bz2;f3438e672e3fa273a7dc26339dd1eed6
 gzip;1.11;https://ftp.gnu.org/gnu/gzip/gzip-@.tar.xz;d1e93996dba00cab0caa7903cd01d454
 iana-etc;20220207;https://github.com/Mic92/iana-etc/releases/download/@/iana-etc-@.tar.gz;81d865ce7fe4240d5abed48c3ca5fa9f
 inetutils;2.2;https://ftp.gnu.org/gnu/inetutils/inetutils-@.tar.xz;de8c1b49cbde2b30e481c61c65357ad4

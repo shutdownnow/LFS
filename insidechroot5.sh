@@ -32,9 +32,11 @@ cat > /boot/efi/grub/grub.cfg << EOF
 set default=0
 set timeout=5
 
+insmod all_video
+insmod gfxterm
 insmod part_gpt
 insmod fat
-set root=(hd0,2)
+set root=(hd2,2)
 
 menuentry "GNU/Linux, Linux 5.16.14-lfs-11.1"  {
 	linux /boot/vmlinuz-5.16.14-lfs-11.1 root=/dev/nvme0n1p2 ro
