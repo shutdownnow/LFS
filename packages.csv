@@ -48,7 +48,7 @@ iproute2;5.16.0;https://www.kernel.org/pub/linux/utils/net/iproute2/iproute2-@.t
 kbd;2.4.0;https://www.kernel.org/pub/linux/utils/kbd/kbd-@.tar.xz;3cac5be0096fcf7b32dcbd3c53831380
 kmod;29;https://www.kernel.org/pub/linux/utils/kernel/kmod/kmod-@.tar.xz;e81e63acd80697d001c8d85c1acb38a0
 less;590;https://www.greenwoodsoftware.com/less/less-@.tar.gz;f029087448357812fba450091a1172ab
-lfs-bootscripts;20210608;https://www.linuxfromscratch.org/lfs/downloads/11.1/lfs-bootscripts-@.tar.xz;0f51a074cc4faaff93b3c80e9ab27b0c
+blfs-bootscripts;20210826;https://anduin.linuxfromscratch.org/BLFS/blfs-bootscripts/blfs-bootscripts-@.tar.xz;6db4b0da28edc5e1b2819af32d5b02bb
 libcap;2.63;https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/libcap-@.tar.xz;18410cec436f827e698ee9ea16ada9b7
 libffi;3.4.2;https://github.com/libffi/libffi/releases/download/v@/libffi-@.tar.gz;294b921e6cf9ab0fbaea4b639f8fdbe8
 libpipeline;1.5.5;https://download.savannah.gnu.org/releases/libpipeline/libpipeline-@.tar.gz;3e725c76bfea1985e87e851ee50c2e29
